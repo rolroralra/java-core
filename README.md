@@ -3,6 +3,10 @@
 1. [Creating Instrumentation Agent](#1-Creating-Instrumentation-Agent)
 2. [Execution Example Class](#2-Execution-Example-Class)
 
+## Reference 
+- [Github - Core Java JVM Cookbooks and Examples](https://github.com/eugenp/tutorials/tree/master/core-java-modules/core-java-jvm)
+- [Baeldung - How to Get the Size of an Object in Java](https://www.baeldung.com/java-size-of-object)
+
 ---
 ## 0. Build and Run Execution
 ```bash
