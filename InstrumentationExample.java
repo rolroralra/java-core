@@ -4,9 +4,12 @@ import java.util.List;
 
 public class InstrumentationExample {
 
-    public static void printObjectSize(Object object) {
-        System.out.println("Object type: " + object.getClass() +
-          ", size: " + InstrumentationAgent.getObjectSize(object) + " bytes");
+    public static void printObjectSize(String title, Object object) {
+        System.out.printf("[%-25s] Object type: %-50s, size: %-3d bytes\n",
+            title,
+            object.getClass(),
+            InstrumentationAgent.getObjectSize(object)
+        );
     }
 
     public static void main(String[] arguments) {
@@ -34,23 +37,23 @@ public class InstrumentationExample {
         }
         StringClass stringClass = new StringClass();
 
-        printObjectSize(emptyString);
-        printObjectSize(string);
-        printObjectSize(stringArray);
-        printObjectSize(anotherStringArray);
-        printObjectSize(stringList);
-        printObjectSize(stringBuilder);
-        printObjectSize(maxIntPrimitive);
-        printObjectSize(minIntPrimitive);
-        printObjectSize(maxInteger);
-        printObjectSize(minInteger);
-        printObjectSize(zeroLong);
-        printObjectSize(zeroDouble);
-        printObjectSize(falseBoolean);
-        printObjectSize(Day.TUESDAY);
-        printObjectSize(object);
-        printObjectSize(emptyClass);
-        printObjectSize(stringClass);
+        printObjectSize("emptyString", emptyString);
+        printObjectSize("string", string);
+        printObjectSize("string[3]", stringArray);
+        printObjectSize("string[100]", anotherStringArray);
+        printObjectSize("List<String>", stringList);
+        printObjectSize("StringBuilder(100)", stringBuilder);
+        printObjectSize("(int)Integer.MAX_VALUE", maxIntPrimitive);
+        printObjectSize("(int)Integer.MIN_VALUE", minIntPrimitive);
+        printObjectSize("Integer.MAX_VALUE", maxInteger);
+        printObjectSize("Integer.MIN_VALUE", minInteger);
+        printObjectSize("0L", zeroLong);
+        printObjectSize("0.0", zeroDouble);
+        printObjectSize("false", falseBoolean);
+        printObjectSize("Enum", Day.TUESDAY);
+        printObjectSize("Object", object);
+        printObjectSize("emptyClass Instance", emptyClass);
+        printObjectSize("Class Instance", stringClass);
     }
 
     public enum Day {

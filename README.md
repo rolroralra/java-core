@@ -114,22 +114,22 @@ public class InstrumentationExample {
 
 ### Result
 ```text
-Object type: class java.lang.String, size: 24 bytes
-Object type: class java.lang.String, size: 24 bytes
-Object type: class [Ljava.lang.String;, size: 32 bytes
-Object type: class [Ljava.lang.String;, size: 416 bytes
-Object type: class java.util.ArrayList, size: 24 bytes
-Object type: class java.lang.StringBuilder, size: 24 bytes
-Object type: class java.lang.Integer, size: 16 bytes
-Object type: class java.lang.Integer, size: 16 bytes
-Object type: class java.lang.Integer, size: 16 bytes
-Object type: class java.lang.Integer, size: 16 bytes
-Object type: class java.lang.Long, size: 24 bytes
-Object type: class java.lang.Double, size: 24 bytes
-Object type: class java.lang.Boolean, size: 16 bytes
-Object type: class InstrumentationExample$Day, size: 24 bytes
-Object type: class java.lang.Object, size: 16 bytes
-Object type: class InstrumentationExample$1EmptyClass, size: 16 bytes
-Object type: class InstrumentationExample$1StringClass, size: 16 bytes
+[emptyString              ] Object type: class java.lang.String                            , size: 24  bytes
+[string                   ] Object type: class java.lang.String                            , size: 24  bytes
+[string[3]                ] Object type: class [Ljava.lang.String;                         , size: 32  bytes
+[string[100]              ] Object type: class [Ljava.lang.String;                         , size: 416 bytes
+[List<String>             ] Object type: class java.util.ArrayList                         , size: 24  bytes
+[StringBuilder(100)       ] Object type: class java.lang.StringBuilder                     , size: 24  bytes
+[(int)Integer.MAX_VALUE   ] Object type: class java.lang.Integer                           , size: 16  bytes
+[(int)Integer.MIN_VALUE   ] Object type: class java.lang.Integer                           , size: 16  bytes
+[Integer.MAX_VALUE        ] Object type: class java.lang.Integer                           , size: 16  bytes
+[Integer.MIN_VALUE        ] Object type: class java.lang.Integer                           , size: 16  bytes
+[0L                       ] Object type: class java.lang.Long                              , size: 24  bytes
+[0.0                      ] Object type: class java.lang.Double                            , size: 24  bytes
+[false                    ] Object type: class java.lang.Boolean                           , size: 16  bytes
+[Enum                     ] Object type: class InstrumentationExample$Day                  , size: 24  bytes
+[Object                   ] Object type: class java.lang.Object                            , size: 16  bytes
+[emptyClass Instance      ] Object type: class InstrumentationExample$1EmptyClass          , size: 16  bytes
+[Class Instance           ] Object type: class InstrumentationExample$1StringClass         , size: 16  bytes
 ```
 
