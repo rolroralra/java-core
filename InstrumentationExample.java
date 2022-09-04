@@ -13,6 +13,8 @@ public class InstrumentationExample {
     }
 
     public static void main(String[] arguments) {
+        char primitiveCharacter = 'b';
+        Character character = 'a';
         String emptyString = "";
         String string = "Estimating Object Size Using Instrumentation";
         String[] stringArray = { emptyString, string, "com.baeldung" };
@@ -37,6 +39,8 @@ public class InstrumentationExample {
         }
         StringClass stringClass = new StringClass();
 
+        printObjectSize("primitive char", primitiveCharacter);
+        printObjectSize("Character", character);
         printObjectSize("emptyString", emptyString);
         printObjectSize("string", string);
         printObjectSize("string[3]", stringArray);
