@@ -1,5 +1,5 @@
 # How to Get the Size of an Object in Java
-0. [Build and Run Execution](0-build-and-run-execution)
+0. [Build and Run Execution](#0-build-and-run-execution)
 1. [Creating Instrumentation Agent](#1-creating-instrumentation-agent)
 2. [Execution Example Class](#2-execution-example-class)
 
